@@ -1,0 +1,95 @@
+
+body {
+    background-image: url('https://tctechcrunch2011.files.wordpress.com/2016/11/24589032835_d14be02bae_o.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0;
+    height: 100vh;
+    width: 100%;        
+    position: fixed;
+}
+
+/*.log_container {
+    margin: 0;
+    height: 500px;
+    width: 500px;
+    position: center;*/
+    /*color: white;*/
+}
+
+#logo {
+    max-width: 400px;
+	max-height: 300px;
+	padding-top: 20px;
+}
+
+.button {
+    position: relative;
+    background-color: red;
+    border: none;
+    font-size: 20px;
+    font-family: Playball;
+    color: darkgray;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button:after {
+    content: "";
+    background: red;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0;
+}
+
+@media screen and (max-width: 980px) {
+    body {
+        /*background-color: lightgray;*/
+    }
+    .wrapper{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        /*background-color: lightgray;*/
+    }
+    .wrapper{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        /*background-color: lightgray;*/
+    }
+    #logo {
+    background-image: url('https://tctechcrunch2011.files.wordpress.com/2016/11/24589032835_d14be02bae_o.jpg') center no-repeat;
+    height: 100px;
+    }
+    .wrapper{
+        width: 600px;
+    }
+}
